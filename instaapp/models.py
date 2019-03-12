@@ -10,3 +10,7 @@ class Image(models.Model):
 
 class Comment(models.Model):
     comments = models.CharField(max_length =30)
+
+class NewsLetterRecipients(models.Model):
+    name = models.CharField(max_length = 30)
+    email = models.EmailField()
