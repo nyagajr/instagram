@@ -17,6 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 urlpatterns = [
+    # url(r'', include('registration.backends.simple.urls')),
     url(r'', include('instaapp.urls')),
     url(r'^admin/', admin.site.urls),
 ]
